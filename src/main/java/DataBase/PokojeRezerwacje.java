@@ -34,5 +34,5 @@ public class PokojeRezerwacje {
         this.dataDo = dataDo;
     }
 
-    public PokojeRezerwacje() {};
+    protected PokojeRezerwacje() {};
 }

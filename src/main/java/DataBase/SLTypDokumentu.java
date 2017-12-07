@@ -27,5 +27,5 @@ public class SLTypDokumentu {
         this.nazwa = nazwa;
     }
 
-    public SLTypDokumentu() {};
+    protected SLTypDokumentu() {};
 }

@@ -24,5 +24,5 @@ public class PokojeZdjecia {
         this.zdjecie = zdjecie;
     }
 
-    public PokojeZdjecia() {};
+    protected PokojeZdjecia() {};
 }

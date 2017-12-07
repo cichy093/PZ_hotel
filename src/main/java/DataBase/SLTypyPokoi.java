@@ -26,5 +26,5 @@ public class SLTypyPokoi {
         this.nazwa = nazwa;
     }
 
-    public SLTypyPokoi() {};
+    protected SLTypyPokoi() {};
 }

@@ -32,6 +32,6 @@ public class Pokoje {
         this.opis = opis;
     }
 
-    public Pokoje() {};
+    protected Pokoje() {};
 
 }
