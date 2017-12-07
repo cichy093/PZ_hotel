@@ -19,7 +19,7 @@ import javax.persistence.Id;
 public class Klienci {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private int _id;
+    private int id;
 
     private String imie;
     private String nazwisko;
@@ -37,10 +37,11 @@ public class Klienci {
         this._idTypDokumentu = idTypDokumentu;
     }
     protected Klienci(){};
+
     @Override
     public String toString() {
         return String.format(
                 "Klient[ID=%d, Imie='%s', Nazwisko='%s', E-mail='s', Telefon='d', Numer Dokumentu= 's', Typ Dokumentu='d']",
-                _id, imie, nazwisko, email, telefon, nrDokumentu, _idTypDokumentu);
+                id, imie, nazwisko, email, telefon, nrDokumentu, _idTypDokumentu);
     }
 }
