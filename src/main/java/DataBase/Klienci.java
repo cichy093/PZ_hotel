@@ -15,7 +15,7 @@ import javax.persistence.Id;
 @Entity
 @Setter
 @Getter
-@Builder
+//@Builder
 public class Klienci {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -28,7 +28,7 @@ public class Klienci {
     private String nrDokumentu;
     private int _idTypDokumentu;
 
-    Klienci(String imie, String nazwisko, String email, int telefon, String nrDokumentu, int idTypDokumentu, int idSlTypDokumentu) {
+    Klienci(String imie, String nazwisko, String email, int telefon, String nrDokumentu, int idTypDokumentu) {
         this.imie = imie;
         this.nazwisko = nazwisko;
         this.email = email;
@@ -36,12 +36,8 @@ public class Klienci {
         this.nrDokumentu = nrDokumentu;
         this._idTypDokumentu = idTypDokumentu;
     }
-    protected Klienci(){};
+    //private Klienci(){};
 
-    @Override
-    public String toString() {
-        return String.format(
-                "Klient[ID=%d, Imie='%s', Nazwisko='%s', E-mail='s', Telefon='d', Numer Dokumentu= 's', Typ Dokumentu='d']",
-                id, imie, nazwisko, email, telefon, nrDokumentu, _idTypDokumentu);
-    }
+
+
 }

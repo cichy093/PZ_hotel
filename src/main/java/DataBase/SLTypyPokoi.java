@@ -15,7 +15,6 @@ import javax.persistence.Id;
 @Entity
 @Setter
 @Getter
-@Builder
 public class SLTypyPokoi {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -26,5 +25,5 @@ public class SLTypyPokoi {
         this.nazwa = nazwa;
     }
 
-    protected SLTypyPokoi() {};
+    //private SLTypyPokoi() {};
 }

@@ -16,7 +16,7 @@ import java.util.Date;
 @Entity
 @Setter
 @Getter
-@Builder
+//@Builder
 public class PokojeRezerwacje {
 
     @Id
@@ -24,15 +24,15 @@ public class PokojeRezerwacje {
     private int id;
     private int idKlienta;
     private int idPokoju;
-    private Date dataOd;
-    private Date dataDo;
+    private String dataOd;
+    private String dataDo;
 
-    public PokojeRezerwacje(int idKlienta, int idPokoju, Date dataOd, Date dataDo) {
+    public PokojeRezerwacje(int idKlienta, int idPokoju, String dataOd, String dataDo) {
         this.idKlienta = idKlienta;
         this.idPokoju = idPokoju;
         this.dataOd = dataOd;
         this.dataDo = dataDo;
     }
 
-    protected PokojeRezerwacje() {};
+    //private PokojeRezerwacje() {};
 }

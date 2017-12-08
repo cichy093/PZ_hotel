@@ -15,7 +15,6 @@ import javax.persistence.Id;
 @Entity
 @Setter
 @Getter
-@Builder
 public class SLTypDokumentu {
 
     @Id
@@ -27,5 +26,5 @@ public class SLTypDokumentu {
         this.nazwa = nazwa;
     }
 
-    protected SLTypDokumentu() {};
+    //private SLTypDokumentu() {};
 }

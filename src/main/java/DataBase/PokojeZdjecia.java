@@ -13,7 +13,6 @@ import javax.persistence.Entity;
 @Entity
 @Setter
 @Getter
-@Builder
 public class PokojeZdjecia {
 
     private int idPokoju;
@@ -24,5 +23,5 @@ public class PokojeZdjecia {
         this.zdjecie = zdjecie;
     }
 
-    protected PokojeZdjecia() {};
+    //private PokojeZdjecia() {};
 }

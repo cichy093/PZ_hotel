@@ -15,7 +15,7 @@ import javax.persistence.Id;
 @Entity
 @Setter
 @Getter
-@Builder
+//@Builder
 public class Pokoje {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -32,6 +32,6 @@ public class Pokoje {
         this.opis = opis;
     }
 
-    protected Pokoje() {};
+    //private Pokoje() {};
 
 }
